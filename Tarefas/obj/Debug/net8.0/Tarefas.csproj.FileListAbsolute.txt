@@ -1,0 +1,14 @@
+C:\Users\FIC\Desktop\AulasCSharp\Assistente de tarefas\Tarefas\Tarefas\bin\Debug\net8.0\Tarefas.exe
+C:\Users\FIC\Desktop\AulasCSharp\Assistente de tarefas\Tarefas\Tarefas\bin\Debug\net8.0\Tarefas.deps.json
+C:\Users\FIC\Desktop\AulasCSharp\Assistente de tarefas\Tarefas\Tarefas\bin\Debug\net8.0\Tarefas.runtimeconfig.json
+C:\Users\FIC\Desktop\AulasCSharp\Assistente de tarefas\Tarefas\Tarefas\bin\Debug\net8.0\Tarefas.dll
+C:\Users\FIC\Desktop\AulasCSharp\Assistente de tarefas\Tarefas\Tarefas\bin\Debug\net8.0\Tarefas.pdb
+C:\Users\FIC\Desktop\AulasCSharp\Assistente de tarefas\Tarefas\Tarefas\obj\Debug\net8.0\Tarefas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\FIC\Desktop\AulasCSharp\Assistente de tarefas\Tarefas\Tarefas\obj\Debug\net8.0\Tarefas.AssemblyInfoInputs.cache
+C:\Users\FIC\Desktop\AulasCSharp\Assistente de tarefas\Tarefas\Tarefas\obj\Debug\net8.0\Tarefas.AssemblyInfo.cs
+C:\Users\FIC\Desktop\AulasCSharp\Assistente de tarefas\Tarefas\Tarefas\obj\Debug\net8.0\Tarefas.csproj.CoreCompileInputs.cache
+C:\Users\FIC\Desktop\AulasCSharp\Assistente de tarefas\Tarefas\Tarefas\obj\Debug\net8.0\Tarefas.dll
+C:\Users\FIC\Desktop\AulasCSharp\Assistente de tarefas\Tarefas\Tarefas\obj\Debug\net8.0\refint\Tarefas.dll
+C:\Users\FIC\Desktop\AulasCSharp\Assistente de tarefas\Tarefas\Tarefas\obj\Debug\net8.0\Tarefas.pdb
+C:\Users\FIC\Desktop\AulasCSharp\Assistente de tarefas\Tarefas\Tarefas\obj\Debug\net8.0\Tarefas.genruntimeconfig.cache
+C:\Users\FIC\Desktop\AulasCSharp\Assistente de tarefas\Tarefas\Tarefas\obj\Debug\net8.0\ref\Tarefas.dll
