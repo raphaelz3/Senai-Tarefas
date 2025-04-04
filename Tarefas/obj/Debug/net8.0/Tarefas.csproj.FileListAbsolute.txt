@@ -12,3 +12,18 @@ C:\Users\FIC\Desktop\AulasCSharp\Assistente de tarefas\Tarefas\Tarefas\obj\Debug
 C:\Users\FIC\Desktop\AulasCSharp\Assistente de tarefas\Tarefas\Tarefas\obj\Debug\net8.0\Tarefas.pdb
 C:\Users\FIC\Desktop\AulasCSharp\Assistente de tarefas\Tarefas\Tarefas\obj\Debug\net8.0\Tarefas.genruntimeconfig.cache
 C:\Users\FIC\Desktop\AulasCSharp\Assistente de tarefas\Tarefas\Tarefas\obj\Debug\net8.0\ref\Tarefas.dll
+D:\Estudos\Senai\Senai-Tarefas\Tarefas\bin\Debug\net8.0\Tarefas.exe
+D:\Estudos\Senai\Senai-Tarefas\Tarefas\bin\Debug\net8.0\Tarefas.deps.json
+D:\Estudos\Senai\Senai-Tarefas\Tarefas\bin\Debug\net8.0\Tarefas.runtimeconfig.json
+D:\Estudos\Senai\Senai-Tarefas\Tarefas\bin\Debug\net8.0\Tarefas.dll
+D:\Estudos\Senai\Senai-Tarefas\Tarefas\bin\Debug\net8.0\Tarefas.pdb
+D:\Estudos\Senai\Senai-Tarefas\Tarefas\obj\Debug\net8.0\Tarefas.GeneratedMSBuildEditorConfig.editorconfig
+D:\Estudos\Senai\Senai-Tarefas\Tarefas\obj\Debug\net8.0\Tarefas.AssemblyInfoInputs.cache
+D:\Estudos\Senai\Senai-Tarefas\Tarefas\obj\Debug\net8.0\Tarefas.AssemblyInfo.cs
+D:\Estudos\Senai\Senai-Tarefas\Tarefas\obj\Debug\net8.0\Tarefas.csproj.CoreCompileInputs.cache
+D:\Estudos\Senai\Senai-Tarefas\Tarefas\obj\Debug\net8.0\Tarefas.sourcelink.json
+D:\Estudos\Senai\Senai-Tarefas\Tarefas\obj\Debug\net8.0\Tarefas.dll
+D:\Estudos\Senai\Senai-Tarefas\Tarefas\obj\Debug\net8.0\refint\Tarefas.dll
+D:\Estudos\Senai\Senai-Tarefas\Tarefas\obj\Debug\net8.0\Tarefas.pdb
+D:\Estudos\Senai\Senai-Tarefas\Tarefas\obj\Debug\net8.0\Tarefas.genruntimeconfig.cache
+D:\Estudos\Senai\Senai-Tarefas\Tarefas\obj\Debug\net8.0\ref\Tarefas.dll

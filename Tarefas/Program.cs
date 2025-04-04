@@ -9,7 +9,9 @@ void ExibirMenu()
 == 2 - Listar Tarefa      ==
 == 3 - Concluir Tarefa    ==
 == 4 - Excluir Tarefa     ==
-== 5 - Exibir Resulmo     ==
+== 5 - Exibir Resumo      ==
+== 6 - Tarefas Concluidas ==
+== 7 - Excluir Concluidas ==
 == 0 - Sair do Programa   ==
 ============================
 Escolha uma opcao acima:");
@@ -52,7 +54,7 @@ void MarcarComoConcluida()
     if (indice >= 0 && indice < tarefas.Count)
     {
         statusTarefas[indice] = true;
-        Console.WriteLine("Tarefa marcada como conclida");
+        Console.WriteLine("Tarefa marcada como concluida");
     }
     else
         Console.WriteLine("Numero Invalido!");
@@ -61,22 +63,32 @@ void MarcarComoConcluida()
 void ExcluirTarefas()
 {
     ListaTarefas();
+    string opcao;
     if (tarefas.Count == 0) return;
 
     Console.WriteLine("Digite o numero da tarefa a ser excluida: ");
     int indice = int.Parse(Console.ReadLine()) - 1;
+    Console.WriteLine($"Você tem certeza que deseja excluir a tarefa {indice + 1}? \"S\" para Sim e \"N\" para Não");
+    opcao = Console.ReadLine().ToLower();
 
-    if (indice >= 0 && indice < tarefas.Count)
+    if (opcao == "s")
     {
-        tarefas.RemoveAt(indice);
-        statusTarefas.RemoveAt(indice);
-        Console.WriteLine("Tarefa removida com sucesso!");
+        if (indice >= 0 && indice < tarefas.Count)
+        {
+            tarefas.RemoveAt(indice);
+            statusTarefas.RemoveAt(indice);
+            Console.WriteLine("Tarefa removida com sucesso!");
+        }
+        else
+            Console.WriteLine("Número invalido");
     }
     else
-        Console.WriteLine("Numero invalido");
+        Console.WriteLine("Nenhuma tarefa removida!");
+
+    return;
 }
 
-void ExibirResulmo()
+void ExibirResumo()
 {
     int total = tarefas.Count;
     int concluidas = statusTarefas.FindAll(status => status).Count();
@@ -87,6 +99,52 @@ void ExibirResulmo()
 Total de tarefas: {total}
 Concluidas: {concluidas}
 Pendentes: {pendentes}");
+}
+
+void TarefasConcluidas()
+{
+    int concluidas = statusTarefas.FindAll(status => status).Count();
+
+    if (concluidas < 1)
+        Console.WriteLine("Você não tem tarefas concluídas.");
+    else
+    {
+         Console.WriteLine($@"
+====== Concluídas ======
+Total de tarefas concluídas: {concluidas}"+"\n");
+
+        for (int i = 0; i < tarefas.Count; i++)
+            if (statusTarefas[i])
+                Console.WriteLine($"{i + 1} - {tarefas[i]} | Concluida.");
+    }
+}
+
+void ExcluirConcluidas()
+{
+    string opcao;
+    Console.WriteLine("Esse Procedimento ira apagar todas as tarefas marcadas como concluidas, prosseguir?\nDigite S para Sim e N para Não");
+    opcao = Console.ReadLine().ToLower();
+
+    if (opcao == "n")
+        return;
+    else if (opcao == "s")
+    {
+        for (int i = 0; i < tarefas.Count; i++)
+        {
+            if (statusTarefas[i])
+            {
+                tarefas.RemoveAt(i);
+                statusTarefas.RemoveAt(i);
+            }
+        }
+    }
+    else
+        Console.WriteLine("Opção Inválida");    
+}
+
+void ModificarTarefa()
+{
+    
 }
 
 bool sairDoPrograma = false;
@@ -100,33 +158,36 @@ while(!sairDoPrograma)
     switch(opcao)
     {
         case "1":
-            //Console.Clear();
             AdicionarTarefa();
             break;
         case "2":
-           // Console.Clear();
             ListaTarefas();
             break;
         case "3":
-           // Console.Clear();
             MarcarComoConcluida();
             break;
         case "4":
             ExcluirTarefas();
             break;
         case "5":
-            ExibirResulmo();
+            ExibirResumo();
+            break;
+        case "6":
+            TarefasConcluidas();
+            break;
+        case "7":
+            ExcluirConcluidas();
+            break;
+        case "8":
+            Console.WriteLine("parou aqui :) ");
             break;
         case "0":
             sairDoPrograma = true;
-           // Console.WriteLine("Você está saindo");
-           // await Task.Delay(1000);
             Console.Clear();
             break;
         default:
             Console.WriteLine("OPÇÃO INVÁLIDA! LEIA O MENU ANTES DE PROSSEGUIR");
             await Task.Delay(2000);
-           // Console.Clear();
             break;
     }
 }

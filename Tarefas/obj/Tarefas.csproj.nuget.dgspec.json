@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FIC\\Desktop\\AulasCSharp\\Assistente de tarefas\\Tarefas\\Tarefas\\Tarefas.csproj": {}
+    "D:\\Estudos\\Senai\\Senai-Tarefas\\Tarefas\\Tarefas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FIC\\Desktop\\AulasCSharp\\Assistente de tarefas\\Tarefas\\Tarefas\\Tarefas.csproj": {
+    "D:\\Estudos\\Senai\\Senai-Tarefas\\Tarefas\\Tarefas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FIC\\Desktop\\AulasCSharp\\Assistente de tarefas\\Tarefas\\Tarefas\\Tarefas.csproj",
+        "projectUniqueName": "D:\\Estudos\\Senai\\Senai-Tarefas\\Tarefas\\Tarefas.csproj",
         "projectName": "Tarefas",
-        "projectPath": "C:\\Users\\FIC\\Desktop\\AulasCSharp\\Assistente de tarefas\\Tarefas\\Tarefas\\Tarefas.csproj",
-        "packagesPath": "C:\\Users\\FIC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FIC\\Desktop\\AulasCSharp\\Assistente de tarefas\\Tarefas\\Tarefas\\obj\\",
+        "projectPath": "D:\\Estudos\\Senai\\Senai-Tarefas\\Tarefas\\Tarefas.csproj",
+        "packagesPath": "C:\\Users\\rapha\\.nuget\\packages\\",
+        "outputPath": "D:\\Estudos\\Senai\\Senai-Tarefas\\Tarefas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\FIC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rapha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -66,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
