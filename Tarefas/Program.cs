@@ -11,7 +11,8 @@ void ExibirMenu()
 == 4 - Excluir Tarefa     ==
 == 5 - Exibir Resumo      ==
 == 6 - Tarefas Concluidas ==
-== 7 - Excluir Concluidas ==
+== 7 - Excluir Concluidas == 
+== 8 - Modificar Tarefa   ==
 == 0 - Sair do Programa   ==
 ============================
 Escolha uma opcao acima:");
@@ -26,12 +27,12 @@ void AdicionarTarefa()
     Console.WriteLine("Tarefa adicionada com sucesso");
 }
 
-void ListaTarefas()
+bool ListaTarefas()
 {
     if(tarefas.Count == 0)
     {
         Console.WriteLine("Nenhuma Tarefa Cadastrada");
-        return;
+        return false;
     }
 
     Console.WriteLine("\n─====== LISTA DE TAREFAS ======─");
@@ -41,6 +42,7 @@ void ListaTarefas()
         string status = statusTarefas[i] ? "Concluida" : "Pendente";
         Console.WriteLine($"{i + 1 } - {tarefas[i]} | {status}");
     }
+    return true;
 }
 
 void MarcarComoConcluida()
@@ -144,7 +146,40 @@ void ExcluirConcluidas()
 
 void ModificarTarefa()
 {
-    
+    string opcao;
+    string novaDescricao = "";
+    int opcaoInt = 0;
+
+    ListaTarefas();
+    if (ListaTarefas())
+    {
+        Console.WriteLine("Qual tarefa desej modificar? ou 0 para cancelar");
+        opcao = Console.ReadLine();
+
+        if (int.TryParse(opcao, out opcaoInt))
+        {
+            if (opcaoInt == 0)
+                return;
+            else
+            {
+                if (opcaoInt > tarefas.Count)
+                {
+                    Console.WriteLine("Tarefa não encontrada. \n Nada Modificado");
+                    return;
+                }
+                else
+                {
+                    Console.WriteLine("Digite a nova descrição:");
+                    novaDescricao = Console.ReadLine();
+                    tarefas[opcaoInt - 1] = novaDescricao;
+                    Console.Clear();
+                    ListaTarefas();
+                }             
+            }
+        } 
+    }
+    else
+        return;
 }
 
 bool sairDoPrograma = false;
@@ -179,7 +214,7 @@ while(!sairDoPrograma)
             ExcluirConcluidas();
             break;
         case "8":
-            Console.WriteLine("parou aqui :) ");
+            ModificarTarefa();
             break;
         case "0":
             sairDoPrograma = true;

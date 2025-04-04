@@ -14,12 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,9 +24,9 @@
               "RelativeDocumentMoniker": "Tarefas\\Program.cs",
               "ToolTip": "D:\\Estudos\\Senai\\Senai-Tarefas\\Tarefas\\Program.cs",
               "RelativeToolTip": "Tarefas\\Program.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAqwFgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAAwLQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T23:47:27.607Z",
+              "WhenOpened": "2025-04-04T01:13:05.998Z",
               "EditorCaption": ""
             }
           ]
