@@ -174,9 +174,15 @@ void ModificarTarefa()
                     tarefas[opcaoInt - 1] = novaDescricao;
                     Console.Clear();
                     ListaTarefas();
-                }             
+                }
             }
-        } 
+        }
+        else
+        {
+            Console.WriteLine("parametro não encontrado.");
+            return;
+        }
+            
     }
     else
         return;
